@@ -5,12 +5,31 @@ nav ul {
 
 a {
     text-decoration: none;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
     color: black;
     font-family: verdana;
 
 
+}
+
+
+    .image-section {
+            display: grid;
+            justify-content: space-around;
+            color: white;
+            font-family: verdana;
+        
+    }
+    
+
+a:hover {
+background-color: #222831;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
 }
 
 nav {
@@ -20,34 +39,17 @@ nav {
 }
 
 .image-section {
-    width: 100%;
     background-color: #76ABAE;
-    height: 50dvh;
+    padding-bottom: 20px;
+    padding-top: 10px;
+ 
 }
 
-.text-section div {
-    display: inline-block;
-}
-
-
-
-.text-section {
-    align-items: center;
-    height: 50dvh;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.text {
-    width: 30%;
-    font-family: verdana;
-
-}
 
 .image {
-    width: 30%;
+    margin: 20px;
+    text-align: center;
+    
 }
 
 .image img {
@@ -58,28 +60,173 @@ nav {
 }
 
 footer {
+    text-align: center;
     padding: 10px 10px 10px 10px;
-
     background-color: #222831;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: block;
+ 
 }
 
-.image-section {
-    display: flex;
-    justify-content: space-around;
-    color: white;
+footer section {
+    margin: 20px;
+}
+
+.image-section img {
+    height: 190px;
+    width: 110px;
+    object-fit: contain;
+    text-align: center;
+
+}
+input, textarea {
+
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  
+  }
+  
+  button{
+      background-color: #222831;
+      color: white;
+      padding: 12px 20px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+    
+
+@media only screen and (min-width: 1200px) {
+    input, textarea {
+        width: 30%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 6px;
+        margin-bottom: 16px;
+      
+      }
+      
+      button{
+          background-color: #222831;
+          color: white;
+          padding: 12px 20px;
+          margin-top: 10px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+        
+    a {
+        text-decoration: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: black;
+        font-family: verdana;
+    
+    
+    }
+    .image-section {
+        background-color: #76ABAE;
+        height: 50dvh;
+    }
+    .image-section img {
+        height: 270px;
+        width: 180px;
+        object-fit: contain;
+        text-align: center;
+    
+    }
+    .image-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        font-family: verdana;
+    }
+
+    .app-images img {
+        object-fit: contain;
+        height: 300px !important;
+    }
+
+    .text-section div {
+        display: inline-block;
+    }
+    
+    
+    
+    .text-section {
+        align-items: center;
+        height: 50dvh;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .text {
+        width: 30%;
+        font-family: verdana;
+    
+    }
+
+    .image {
+        width: 30%;
+    }
+    
+    .image img {
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+    }
+
+    footer {
+        padding: 10px 10px 10px 10px;
+    
+        background-color: #222831;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .image-text-contact-us{
+        padding-left: 100px;
+        padding-right: 100px;
+        font-family: verdana;
+        text-align: center;
+    
+    }
+}
+
+.image-text-contact-us{
+    padding-left: 30px;
+    padding-right: 30px;
     font-family: verdana;
+    text-align: center;
+
+}
+.text {
+    margin: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-family: verdana;
+
 }
 
 .image-text {
-    text-align: start;
+ 
+    text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
     
 }
+
 .form-text{
     text-align: start;
     display: flex;
@@ -89,15 +236,16 @@ footer {
 }
 
 .app-images {
-    width: 30%;
     text-align: center;
     display: flex;
+align-content: center;
     align-items: center;
     justify-content: space-around;
 }
 
 .app-images img {
     object-fit: contain;
+    height: 150px;
 }
 
 .address {
